@@ -8,7 +8,7 @@ source run.sh
 ```c
 #include "stdio.h"
 #include "./algebra/expression.h"
-#include "./algebra/globals.h"
+#include "./algebra/globals.h" // Automactic Memory Management 
 #define let __auto_type
 #include <string.h> 
 
@@ -26,7 +26,7 @@ int main(){
     
     expression_show(&expression); // expression -> 7.00x^2
 
-    FREE_POINTERS_THEN_EXIT;
+    FREE_POINTERS_THEN_EXIT; // All Pointers that have not been freed will be automatically freed before program execution ends.
 }
 
 ```
