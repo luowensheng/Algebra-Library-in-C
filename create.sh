@@ -1,0 +1,1 @@
+touch $1.c && touch $1.h
